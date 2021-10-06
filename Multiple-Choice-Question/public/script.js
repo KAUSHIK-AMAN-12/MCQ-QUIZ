@@ -21,6 +21,7 @@ const userdetails = document.getElementById('userdetails')
 
 
 
+
 const questions = [
     {
         question : 'Ques. what is the purpose of JWT ?',
@@ -94,9 +95,9 @@ const questions = [
             {text : 'none of the above' , correct : false}
         ]
     },
-
-
 ]
+
+
 let shuffledQuestions;                    //new var use for --->   New Array
 let currentQuestionIndex;                 //new var use for ---> index for New Array
 let totalrightquestions = 0;              
@@ -130,6 +131,8 @@ questionContainerElement.classList.remove('hide')
 headerid.classList.remove('hide') 
 resultdivcontainer.classList.add('hide')
 detailsdiv.classList.add('hide')
+userdetails.classList.add('hide')
+
 
 shuffledQuestions = questions.sort(()=> Math.random() - .5)     //questions.sort(0/1) for new array
 currentQuestionIndex = 0
